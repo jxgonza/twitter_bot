@@ -18,4 +18,5 @@ client = tweepy.Client(bearer_token=BEARER, consumer_key=CONSUMER_KEY, consumer_
 
 days_until = calculator()
 day_text = "Quedan %s días para el concierto de #BadBunny en Orlando, FL. Te amo BIBR <3" %str(days_until)
-# client.create_tweet(text="Quedan %s días para el concierto de #BadBunny en Orlando, FL. Te amo BIBR <3" %str(days_until))
+client.create_tweet(text=day_text)
+
